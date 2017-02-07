@@ -9,11 +9,11 @@
  * character grid for producing Ascii artwork */
 public class AsciiCanvas{
   // Properties
-  int sizeX = 20;
-  int sizeY = 10;
-  char[][] canvas = new char[sizeY][sizeX];
-  int drawLocationX = sizeX/2;
-  int drawLocationY = sizeY/2;
+  private int sizeX = 20;
+  private int sizeY = 10;
+  private char[][] canvas = new char[sizeY][sizeX];
+  private int drawLocationX = sizeX/2;
+  private int drawLocationY = sizeY/2;
   
   // Constructors
   AsciiCanvas() {
@@ -23,6 +23,34 @@ public class AsciiCanvas{
   AsciiCanvas(char character) {
     this.fillCanvas(character);
   }
+  
+  // Getters/Setters
+  public int getSizeX () {
+    return this.sizeX;
+  }
+  public int getSizeY () {
+    return this.sizeY;
+  }
+  public int getDrawLocationX () {
+    return this.drawLocationX;
+  }
+  
+  public int getDrawLocationY () {
+    return this.drawLocationY;
+  }
+  
+  public void setDrawLocationX(int x) {
+    this.drawLocationX = x;
+  }
+  
+  public void setDrawLocationY(int y) {
+    this.drawLocationY = y;
+  }
+  
+  // no setters for sizeX, sizeY, and canvas
+  // because changing the size of the array
+  // will potentially cause a crash and shouldn't
+  // be allowed.
   
   // Methods
   
