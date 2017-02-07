@@ -1,3 +1,12 @@
+/* By the CSI/CEN 213 class Spring 2017
+ * This code is for teaching purposes only
+ * and it might not be the greatest. Stealing
+ * it would be a poor choice, because there's
+ * better stuff out there. */
+
+
+/* AsciiCanvas is a class that creates a square
+ * character grid for producing Ascii artwork */
 public class AsciiCanvas{
   // Properties
   int sizeX = 20;
@@ -17,10 +26,16 @@ public class AsciiCanvas{
   
   // Methods
   
+  /* Fills the canvas so that each position
+   * has the user specified character in it. */
   void fillCanvas(char character) {
-    for (int i = 0; i < this.sizeY; i++) 
-      for (int j = 0; j < this.sizeX; j++)
+    // fills each line of the cavnvas
+    for (int i = 0; i < this.sizeY; i++) {
+      // fills one line of canvas with character
+      for (int j = 0; j < this.sizeX; j++) {
         this.canvas[i][j] = character;
+      }
+    }
   }
   
   public void render() {
