@@ -98,7 +98,7 @@ public class AsciiCanvas{
     if (input >= 0 && input < high) {
       return input;
     }
-    else if (input >= 0) {
+    if (input < 0) {
       // negative values become 0
       return 0;
     } 
