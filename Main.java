@@ -1,10 +1,10 @@
 public class Main{
   public static void main(String [ ] args) {
     // Test constructor
-    AsciiCanvas canvasSpace = new AsciiCanvas();
+    //AsciiCanvas canvasSpace = new AsciiCanvas();
     //canvasSpace.render();
     // Test constructor that takes char argument
-    AsciiCanvas canvasStar = new AsciiCanvas('*');
+    //AsciiCanvas canvasStar = new AsciiCanvas('*');
     //canvasStar.render();
     // test getters
     /*System.out.println(canvasSpace.getSizeX());
@@ -90,7 +90,7 @@ public class Main{
     canvasSpace.drawCharacter('3'); // 3 should overwrite 2
     canvasSpace.render();*/
     // test right method
-    canvasSpace.setDrawPoint(10,5);
+    /*canvasSpace.setDrawPoint(10,5);
     canvasSpace.drawCharacter('0');
     canvasSpace.right();
     canvasSpace.drawCharacter('1'); // should put 1 in square right of 0
@@ -98,6 +98,59 @@ public class Main{
     canvasSpace.drawCharacter('2');
     canvasSpace.right();
     canvasSpace.drawCharacter('3'); // 3 should overwrite 2
-    canvasSpace.render();
+    canvasSpace.render();*/
+    AsciiCanvas canvas = new AsciiCanvas();
+    // picture inspired by http://www.trussel.com/f_char.htm
+    canvas.setDrawPoint(8,3);
+    canvas.drawCharacter('@');
+    for (int i = 0; i < 2; i++) {
+      canvas.right();
+      canvas.drawCharacter('.');
+    }
+    canvas.right();
+    canvas.drawCharacter('@');
+    canvas.down();
+    canvas.right();
+    canvas.drawCharacter(')');
+    for (int i = 0; i < 4; i++) {
+      canvas.left();
+      canvas.drawCharacter('-');
+    }
+    canvas.left();
+    canvas.drawCharacter('(');
+    canvas.left();
+    canvas.down();
+    canvas.drawCharacter('(');
+    canvas.right();
+    canvas.right();
+    canvas.drawCharacter('>');
+    for (int i = 0; i < 2; i++) {
+      canvas.right();
+      canvas.drawCharacter('_');
+    }
+    canvas.right();
+    canvas.drawCharacter('<');
+    canvas.right();
+    canvas.right();
+    canvas.drawCharacter(')');
+    canvas.down();
+    canvas.drawCharacter('^');
+    canvas.left();
+    canvas.drawCharacter('^');
+    canvas.left();
+    for (int i = 0; i < 2; i++) {
+      canvas.left();
+      canvas.drawCharacter('~');
+    }
+    canvas.left();
+    for (int i = 0; i < 2; i++) {
+      canvas.left();
+      canvas.drawCharacter('^');
+    }
+    canvas.render();
+      
+    
+    
+    
   }
 }
