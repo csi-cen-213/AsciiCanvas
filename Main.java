@@ -31,10 +31,23 @@ public class Main{
     canvasSpace.setDrawLocationY(200); 
     System.out.println(canvasSpace.getDrawLocationX());
     System.out.println(canvasSpace.getDrawLocationY());*/
-    // test canvasSpace
+    // test bounds
     /*System.out.println(canvasSpace.bounds(5, 10));  // should return 5
     System.out.println(canvasSpace.bounds(-1, 10)); // should return 0
     System.out.println(canvasSpace.bounds(100,10)); // should return 9 */
+    // test setDrawPoint 
+    canvasSpace.setDrawPoint(8, 9);
+    System.out.println(canvasSpace.getDrawLocationX());
+    System.out.println(canvasSpace.getDrawLocationY());
+    // test setDrawPoint with illegal values (too low)
+    canvasSpace.setDrawPoint(-14, -485);
+    System.out.println(canvasSpace.getDrawLocationX());
+    System.out.println(canvasSpace.getDrawLocationY());
+    // test setDrawPoint with illegal values (too high)
+    canvasSpace.setDrawPoint(3456, 234);
+    System.out.println(canvasSpace.getDrawLocationX());
+    System.out.println(canvasSpace.getDrawLocationY());
+    
     
     
     

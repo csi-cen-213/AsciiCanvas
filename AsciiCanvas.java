@@ -57,9 +57,21 @@ public class AsciiCanvas{
   
   // Methods
   
+  /* uses x,y coordinates to set draw point */
+  public void setDrawPoint(int x, int y) {
+    // uses setter instead of = because the set method 
+    // makes sure that the location is legal.
+    // even if our set method didn't do that, this might
+    // be a good idea because we might find a bug later
+    // that would make us have a more complicated set
+    // method
+    this.setDrawLocationX(x);
+    this.setDrawLocationY(y);
+  }
+  
   /* Fills the canvas so that each position
    * has the user specified character in it. */
-  void fillCanvas(char character) {
+  public void fillCanvas(char character) {
     // fills each line of the cavnvas
     for (int i = 0; i < this.sizeY; i++) {
       // fills one line of canvas with character
@@ -97,7 +109,5 @@ public class AsciiCanvas{
       return high-1;
     }
   }
-  
-  
 
 }
