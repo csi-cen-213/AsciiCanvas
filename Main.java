@@ -19,6 +19,12 @@ public class Main{
     canvasSpace.setDrawLocationY(1); 
     System.out.println(canvasSpace.getDrawLocationX());
     System.out.println(canvasSpace.getDrawLocationY());
+    // test setters to make sure they behave properly for 
+    // values outside the drawing area
+    canvasSpace.setDrawLocationX(-2);
+    canvasSpace.setDrawLocationY(-1); 
+    System.out.println(canvasSpace.getDrawLocationX());
+    System.out.println(canvasSpace.getDrawLocationY());
     
     
     
