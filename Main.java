@@ -20,9 +20,15 @@ public class Main{
     System.out.println(canvasSpace.getDrawLocationX());
     System.out.println(canvasSpace.getDrawLocationY());
     // test setters to make sure they behave properly for 
-    // values outside the drawing area
+    // values outside the drawing area (too low)
     canvasSpace.setDrawLocationX(-2);
     canvasSpace.setDrawLocationY(-1); 
+    System.out.println(canvasSpace.getDrawLocationX());
+    System.out.println(canvasSpace.getDrawLocationY());
+    // test setters to make sure they behave properly for 
+    // values outside the drawing area (too high)
+    canvasSpace.setDrawLocationX(100);
+    canvasSpace.setDrawLocationY(200); 
     System.out.println(canvasSpace.getDrawLocationX());
     System.out.println(canvasSpace.getDrawLocationY());
     
