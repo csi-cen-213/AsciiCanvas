@@ -74,6 +74,11 @@ public class AsciiCanvas{
     this.setDrawLocationY(this.getDrawLocationY()-1);
   }
   
+  /* Moves drawLocation down one space */
+  public void down() {
+    this.setDrawLocationY(this.getDrawLocationY()+1);
+  }
+  
   /* Puts a character in the canvas at the current draw location */
   public void drawCharacter(char character) {
     this.canvas[this.drawLocationY][this.drawLocationX] = character;
