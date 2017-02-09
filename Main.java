@@ -3,6 +3,9 @@ public class Main{
     // Test constructor
     AsciiCanvas canvasSpace = new AsciiCanvas();
     canvasSpace.render();
+    // Test constructor that takes char argument
+    AsciiCanvas canvasStar = new AsciiCanvas('*');
+    canvasStar.render();
     // test getters
     System.out.println(canvasSpace.getSizeX());
     System.out.println(canvasSpace.getSizeY());
@@ -16,9 +19,8 @@ public class Main{
     canvasSpace.setDrawLocationY(1); 
     System.out.println(canvasSpace.getDrawLocationX());
     System.out.println(canvasSpace.getDrawLocationY());
-    // Test constructor that takes char argument
-    AsciiCanvas canvasStar = new AsciiCanvas('*');
-    canvasStar.render();
+    
+    
     
  
   }
