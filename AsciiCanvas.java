@@ -81,6 +81,7 @@ public class AsciiCanvas{
     }
   }
   
+  /* prints canvas to screen */
   public void render() {
     for(int i = 0; i < this.sizeY; i++){
       for(int j = 0;j < this.sizeX; j++){
