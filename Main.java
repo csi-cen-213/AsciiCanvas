@@ -5,12 +5,12 @@ public class Main{
     /*canvasSpace.render();
     // Test constructor that takes char argument
     AsciiCanvas canvasStar = new AsciiCanvas('*');
-    canvasStar.render();
+    canvasStar.render();*/
     // test getters
-    System.out.println(canvasSpace.getSizeX());
+    /*System.out.println(canvasSpace.getSizeX());
     System.out.println(canvasSpace.getSizeY());
     System.out.println(canvasSpace.getDrawLocationX());
-    System.out.println(canvasSpace.getDrawLocationY());
+    System.out.println(canvasSpace.getDrawLocationY());*/
     // test setters
     // picking a different number for X and Y so when I 
     // print them I can tell them apart and make sure they
@@ -30,11 +30,11 @@ public class Main{
     canvasSpace.setDrawLocationX(100);
     canvasSpace.setDrawLocationY(200); 
     System.out.println(canvasSpace.getDrawLocationX());
-    System.out.println(canvasSpace.getDrawLocationY());*/
+    System.out.println(canvasSpace.getDrawLocationY());
     // test canvasSpace
-    System.out.println(canvasSpace.bounds(5, 10));  // should return 5
+    /*System.out.println(canvasSpace.bounds(5, 10));  // should return 5
     System.out.println(canvasSpace.bounds(-1, 10)); // should return 0
-    System.out.println(canvasSpace.bounds(100,10)); // should return 9 
+    System.out.println(canvasSpace.bounds(100,10)); // should return 9 */
     
     
     

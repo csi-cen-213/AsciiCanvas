@@ -39,26 +39,15 @@ public class AsciiCanvas{
     return this.drawLocationY;
   }
   
+  /* Sets DrawLocationX to the legal value closest to its value */
   public void setDrawLocationX(int x) {
-    // test if x is negative
-    if (x >= 0) {
-      this.drawLocationX = x;
-    }
-    else {
-      // make draw location the edge it tried to cross
-      this.drawLocationX = 0;
-    } 
+    this.drawLocationX = this.bounds(x,this.sizeX);
+    
   }
   
+  /* Sets DrawLocationY to the legal value closest to its value */
   public void setDrawLocationY(int y) {
-    // test if x is negative
-    if (y >= 0) {
-      this.drawLocationY = y;
-    }
-    else {
-      // make draw location the edge it tried to cross
-      this.drawLocationY = 0;
-    } 
+    this.drawLocationY = this.bounds(y,this.sizeY);
   }
   
   // no setters for sizeX, sizeY, and canvas
