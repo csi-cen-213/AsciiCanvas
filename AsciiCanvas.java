@@ -89,5 +89,22 @@ public class AsciiCanvas{
     }
   }
   
+  /* Tests if in is illegal (negative or too high). Returns the
+   * legal value for in that is closest to it: 0 if it would be
+   * negative, the maximum legal value if it would be too high. */
+  public int bounds(int input, int high) {
+    // if input is legal, return it
+    if (input >= 0 && input < high) {
+      return input;
+    }
+    else if (input >= 0) {
+      // negative values become 0
+      return 0;
+    } 
+    else {
+      // too high values become the high boundary
+      return high;
+    }
+  }
 
 }
