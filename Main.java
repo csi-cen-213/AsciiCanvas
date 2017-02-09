@@ -2,10 +2,10 @@ public class Main{
   public static void main(String [ ] args) {
     // Test constructor
     AsciiCanvas canvasSpace = new AsciiCanvas();
-    /*canvasSpace.render();
+    //canvasSpace.render();
     // Test constructor that takes char argument
     AsciiCanvas canvasStar = new AsciiCanvas('*');
-    canvasStar.render();*/
+    //canvasStar.render();
     // test getters
     /*System.out.println(canvasSpace.getSizeX());
     System.out.println(canvasSpace.getSizeY());
@@ -36,7 +36,7 @@ public class Main{
     System.out.println(canvasSpace.bounds(-1, 10)); // should return 0
     System.out.println(canvasSpace.bounds(100,10)); // should return 9 */
     // test setDrawPoint 
-    canvasSpace.setDrawPoint(8, 9);
+    /*canvasSpace.setDrawPoint(8, 9);
     System.out.println(canvasSpace.getDrawLocationX());
     System.out.println(canvasSpace.getDrawLocationY());
     // test setDrawPoint with illegal values (too low)
@@ -46,8 +46,18 @@ public class Main{
     // test setDrawPoint with illegal values (too high)
     canvasSpace.setDrawPoint(3456, 234);
     System.out.println(canvasSpace.getDrawLocationX());
-    System.out.println(canvasSpace.getDrawLocationY());
-    
+    System.out.println(canvasSpace.getDrawLocationY());*/
+    // test drawCharacter
+    /*canvasSpace.setDrawPoint(0,0);
+    canvasSpace.drawCharacter('+');
+    canvasSpace.render();*/
+    // make sure X and Y aren't mixed up; using * canvas
+    // so it's easier to see what is going on
+    canvasStar.setDrawPoint(5,0);
+    canvasStar.drawCharacter('x');
+    canvasStar.setDrawPoint(0,5);
+    canvasStar.drawCharacter('y');
+    canvasStar.render();
     
     
     
