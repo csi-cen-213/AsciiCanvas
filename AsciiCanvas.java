@@ -40,11 +40,25 @@ public class AsciiCanvas{
   }
   
   public void setDrawLocationX(int x) {
-    this.drawLocationX = x;
+    // test if x is negative
+    if (x >= 0) {
+      this.drawLocationX = x;
+    }
+    else {
+      // make draw location the edge it tried to cross
+      this.drawLocationX = 0;
+    } 
   }
   
   public void setDrawLocationY(int y) {
-    this.drawLocationY = y;
+    // test if x is negative
+    if (y >= 0) {
+      this.drawLocationY = y;
+    }
+    else {
+      // make draw location the edge it tried to cross
+      this.drawLocationY = 0;
+    } 
   }
   
   // no setters for sizeX, sizeY, and canvas
