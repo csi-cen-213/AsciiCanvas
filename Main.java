@@ -66,18 +66,28 @@ public class Main{
     canvasSpace.setDrawPoint(0,0);
     canvasSpace.drawCharacter('2');
     canvasSpace.up();
-    canvasSpace.drawCharacter('3'); // should overwrite 2
+    canvasSpace.drawCharacter('3'); // 3 should overwrite 2
     canvasSpace.render();*/
     // test down method
-    canvasSpace.setDrawPoint(10,5);
+    /*canvasSpace.setDrawPoint(10,5);
     canvasSpace.drawCharacter('0');
     canvasSpace.down();
     canvasSpace.drawCharacter('1'); // should put 1 in square below 0
     canvasSpace.setDrawPoint(100,100);
     canvasSpace.drawCharacter('2');
     canvasSpace.down();
-    canvasSpace.drawCharacter('3'); // should overwrite 2
+    canvasSpace.drawCharacter('3'); // 3 should overwrite 2
     canvasSpace.down();
+    canvasSpace.render();*/
+    // test left method
+    canvasSpace.setDrawPoint(10,5);
+    canvasSpace.drawCharacter('0');
+    canvasSpace.left();
+    canvasSpace.drawCharacter('1'); // should put 1 in square left of 0
+    canvasSpace.setDrawPoint(0,0);
+    canvasSpace.drawCharacter('2');
+    canvasSpace.left();
+    canvasSpace.drawCharacter('3'); // 3 should overwrite 2
     canvasSpace.render();
  
   }
