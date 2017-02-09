@@ -80,7 +80,7 @@ public class Main{
     canvasSpace.down();
     canvasSpace.render();*/
     // test left method
-    canvasSpace.setDrawPoint(10,5);
+    /*canvasSpace.setDrawPoint(10,5);
     canvasSpace.drawCharacter('0');
     canvasSpace.left();
     canvasSpace.drawCharacter('1'); // should put 1 in square left of 0
@@ -88,7 +88,16 @@ public class Main{
     canvasSpace.drawCharacter('2');
     canvasSpace.left();
     canvasSpace.drawCharacter('3'); // 3 should overwrite 2
+    canvasSpace.render();*/
+    // test right method
+    canvasSpace.setDrawPoint(10,5);
+    canvasSpace.drawCharacter('0');
+    canvasSpace.right();
+    canvasSpace.drawCharacter('1'); // should put 1 in square right of 0
+    canvasSpace.setDrawPoint(456,123);
+    canvasSpace.drawCharacter('2');
+    canvasSpace.right();
+    canvasSpace.drawCharacter('3'); // 3 should overwrite 2
     canvasSpace.render();
- 
   }
 }
