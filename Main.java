@@ -100,8 +100,10 @@ public class Main{
     canvasSpace.drawCharacter('3'); // 3 should overwrite 2
     canvasSpace.render();*/
     AsciiCanvas canvas = new AsciiCanvas();
-    // picture inspired by http://www.trussel.com/f_char.htm
-    canvas.setDrawPoint(8,3);
+    // pictures inspired by http://www.trussel.com/f_char.htm
+    
+    // frog to practice loops
+    canvas.setDrawPoint(13,5);
     canvas.drawCharacter('@');
     for (int i = 0; i < 2; i++) {
       canvas.right();
@@ -147,10 +149,52 @@ public class Main{
       canvas.left();
       canvas.drawCharacter('^');
     }
-    canvas.render();
       
+    // bird to practice 2D arrays
+    canvas.setDrawPoint(4, 1);
+    canvas.drawCharacter('(');
+    canvas.setDrawPoint(5, 1);
+    canvas.drawCharacter('(');
+    canvas.setDrawPoint(6, 1);
+    canvas.drawCharacter('(');
+    canvas.setDrawPoint(3, 2);
+    canvas.drawCharacter('(');
+    canvas.setDrawPoint(4, 2);
+    canvas.drawCharacter('.');
+    canvas.setDrawPoint(6, 2);
+    canvas.drawCharacter('.');
+    canvas.setDrawPoint(7, 2);
+    canvas.drawCharacter(')');
+    canvas.setDrawPoint(2, 3);
+    canvas.drawCharacter('(');
+    canvas.setDrawPoint(3, 3);
+    canvas.drawCharacter('(');
+    canvas.setDrawPoint(5, 3);
+    canvas.drawCharacter('v');
+    canvas.setDrawPoint(7, 3);
+    canvas.drawCharacter(')');
+    canvas.setDrawPoint(8, 3);
+    canvas.drawCharacter(')');
+    canvas.setDrawPoint(1, 4);
+    canvas.drawCharacter('-');
+    canvas.setDrawPoint(2, 4);
+    canvas.drawCharacter('-');
+    canvas.setDrawPoint(3, 4);
+    canvas.drawCharacter('-');
+    canvas.setDrawPoint(4, 4);
+    canvas.drawCharacter('m');
+    canvas.setDrawPoint(5, 4);
+    canvas.drawCharacter('-');
+    canvas.setDrawPoint(6, 4);
+    canvas.drawCharacter('m');
+    canvas.setDrawPoint(7, 4);
+    canvas.drawCharacter('-');
+    canvas.setDrawPoint(8, 4);
+    canvas.drawCharacter('-');
+    canvas.setDrawPoint(9, 4);
+    canvas.drawCharacter('-');
     
-    
-    
+    // draw finished canvas
+    canvas.render();
   }
 }
