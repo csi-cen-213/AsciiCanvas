@@ -53,12 +53,21 @@ public class Main{
     canvasSpace.render();*/
     // make sure X and Y aren't mixed up; using * canvas
     // so it's easier to see what is going on
-    canvasStar.setDrawPoint(5,0);
+    /*canvasStar.setDrawPoint(5,0);
     canvasStar.drawCharacter('x');
     canvasStar.setDrawPoint(0,5);
     canvasStar.drawCharacter('y');
-    canvasStar.render();
-    
+    canvasStar.render();*/
+    // test up method
+    canvasSpace.setDrawPoint(10,5);
+    canvasSpace.drawCharacter('0');
+    canvasSpace.up();
+    canvasSpace.drawCharacter('1'); // should put 1 in square above 0
+    canvasSpace.setDrawPoint(0,0);
+    canvasSpace.drawCharacter('2');
+    canvasSpace.up();
+    canvasSpace.drawCharacter('3'); // should overwrite 2
+    canvasSpace.render();
     
     
  
