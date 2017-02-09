@@ -93,6 +93,7 @@ public class AsciiCanvas{
    * legal value for in that is closest to it: 0 if it would be
    * negative, the maximum legal value if it would be too high. */
   public int bounds(int input, int high) {
+    System.out.print(input + " ");
     // if input is legal, return it
     if (input >= 0 && input < high) {
       return input;
@@ -103,7 +104,9 @@ public class AsciiCanvas{
     } 
     else {
       // too high values become the high boundary
-      return high;
+      // subtract 1 because the last index of an 
+      // array is 1 less than its size
+      return high-1;
     }
   }
 

@@ -32,7 +32,8 @@ public class Main{
     System.out.println(canvasSpace.getDrawLocationX());
     System.out.println(canvasSpace.getDrawLocationY());*/
     // test canvasSpace
-    System.out.println(canvasSpace.bounds(-1, 10));  // should return 0
+    System.out.println(canvasSpace.bounds(5, 10));  // should return 5
+    System.out.println(canvasSpace.bounds(-1, 10)); // should return 0
     System.out.println(canvasSpace.bounds(100,10)); // should return 9 
     
     
